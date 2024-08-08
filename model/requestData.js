@@ -11,7 +11,7 @@ const requestDataSchema = new mongoose.Schema({
 
   description: { type: String, default: '' },
 
-  useCase: {
+  usecase: {
     type: String,
     default: ''
   },
