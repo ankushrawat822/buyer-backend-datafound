@@ -9,7 +9,7 @@ const getSellerProfileById = async (req, res) => {
   
 
     try {
-        const profile = await SellerProfile.findOne({ sellerId }).populate("dataProducts");
+        const profile = await SellerProfile.findOne({ userId : sellerId }).populate("dataProducts");
         if (!profile) {
             return res.status(404).json({ message: 'Seller profile not found' });
         }

@@ -5,7 +5,7 @@ const { getSellerProfileById } = require("../controller/sellerProfileController.
 
 const router = express.Router()
 
-router.get("/seller/profile/:userId" , getSellerProfileById  )
+router.get("/seller/profile/:sellerId" , getSellerProfileById  )
 
 
 module.exports = router
